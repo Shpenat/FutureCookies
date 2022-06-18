@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.FutureCookies.FortuneActivity">
+
+
+    <ImageView
+        android:id="@+id/cake_label_image2"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/fortune_label_image2"
+        app:layout_constraintStart_toEndOf="@+id/coin_label_image2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_label_image" />
+
+    <ImageView
+        android:id="@+id/coin_label_image2"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_label_image" />
+
+    <ImageView
+        android:id="@+id/fortune_label_image2"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_label_image" />
+
+    <ImageView
+        android:id="@+id/rotate_button"
+        android:layout_width="290dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fortune_button_image" />
+
+    <ImageView
+        android:id="@+id/fortune_wheel"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fortune_wheel_image" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintEnd_toEndOf="@+id/fortune_wheel"
+        app:layout_constraintStart_toStartOf="@+id/fortune_wheel"
+        app:layout_constraintTop_toTopOf="@+id/fortune_wheel"
+        app:srcCompat="@drawable/arrow_image" />
+
+    <ImageView
+        android:id="@+id/back_btn_small"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fortune_label_image2"
+        app:layout_constraintEnd_toEndOf="@+id/fortune_label_image2"
+        app:layout_constraintStart_toStartOf="@+id/fortune_label_image2"
+        app:layout_constraintTop_toTopOf="@+id/fortune_label_image2"
+        app:srcCompat="@drawable/back_button_small_image" />
+
+    <ImageView
+        android:id="@+id/coin_image_logo2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_label_image2"
+        app:layout_constraintStart_toStartOf="@+id/coin_label_image2"
+        app:layout_constraintTop_toTopOf="@+id/coin_label_image2"
+        app:srcCompat="@drawable/coin_image" />
+
+    <ImageView
+        android:id="@+id/cake_image_logo2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cake_label_image2"
+        app:layout_constraintStart_toStartOf="@+id/cake_label_image2"
+        app:layout_constraintTop_toTopOf="@+id/cake_label_image2"
+        app:srcCompat="@drawable/cake_image" />
+
+    <TextView
+        android:id="@+id/coin_counter2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/pink_2"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_label_image2"
+        app:layout_constraintEnd_toEndOf="@+id/coin_label_image2"
+        app:layout_constraintTop_toTopOf="@+id/coin_label_image2" />
+
+    <TextView
+        android:id="@+id/cake_counter2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/pink_2"
+        app:layout_constraintBottom_toBottomOf="@+id/cake_label_image2"
+        app:layout_constraintEnd_toEndOf="@+id/cake_label_image2"
+        app:layout_constraintTop_toTopOf="@+id/cake_label_image2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

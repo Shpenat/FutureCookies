@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.FutureCookies.MainActivity">
+
+    <ImageView
+        android:id="@+id/break_btn"
+        android:layout_width="290dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/break_button_image" />
+
+    <ImageView
+        android:id="@+id/cake_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/norm_cake_image" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="290dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button_image" />
+
+    <ImageView
+        android:id="@+id/predict_bg_image"
+        android:layout_width="281dp"
+        android:layout_height="107dp"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toBottomOf="@+id/cake_image"
+        app:layout_constraintEnd_toEndOf="@+id/cake_image"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/cake_image"
+        app:layout_constraintTop_toTopOf="@+id/cake_image"
+        app:layout_constraintVertical_bias="0.507"
+        app:srcCompat="@drawable/bg_prediction_image" />
+
+    <TextView
+        android:id="@+id/predict_text"
+        android:layout_width="259dp"
+        android:layout_height="80dp"
+        android:autoText="true"
+        android:fontFamily="@font/ubuntu_bold"
+        android:gravity="center"
+        android:text="Предсказание"
+        android:textColor="@color/shadow"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/predict_bg_image"
+        app:layout_constraintEnd_toEndOf="@+id/predict_bg_image"
+        app:layout_constraintStart_toStartOf="@+id/predict_bg_image"
+        app:layout_constraintTop_toTopOf="@+id/predict_bg_image" />
+
+
+
+    <ImageView
+        android:id="@+id/coin_label_image"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_label_image" />
+
+    <ImageView
+        android:id="@+id/cake_label_image"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/fortune_label_image"
+        app:layout_constraintStart_toEndOf="@+id/coin_label_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_label_image" />
+
+    <ImageView
+        android:id="@+id/fortune_label_image"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_label_image" />
+
+    <ImageView
+        android:id="@+id/coin_image_logo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_label_image"
+        app:layout_constraintStart_toStartOf="@+id/coin_label_image"
+        app:layout_constraintTop_toTopOf="@+id/coin_label_image"
+        app:srcCompat="@drawable/coin_image" />
+
+    <ImageView
+        android:id="@+id/cake_image_logo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cake_label_image"
+        app:layout_constraintStart_toStartOf="@+id/cake_label_image"
+        app:layout_constraintTop_toTopOf="@+id/cake_label_image"
+        app:srcCompat="@drawable/cake_image" />
+
+    <ImageView
+        android:id="@+id/fortune_image_logo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fortune_label_image"
+        app:layout_constraintEnd_toEndOf="@+id/fortune_label_image"
+        app:layout_constraintStart_toStartOf="@+id/fortune_label_image"
+        app:layout_constraintTop_toTopOf="@+id/fortune_label_image"
+        app:srcCompat="@drawable/fortune_image" />
+
+    <TextView
+        android:id="@+id/coin_counter"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/pink_2"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_label_image"
+        app:layout_constraintEnd_toEndOf="@+id/coin_label_image"
+        app:layout_constraintTop_toTopOf="@+id/coin_label_image" />
+
+    <TextView
+        android:id="@+id/cake_counter"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/pink_2"
+        app:layout_constraintBottom_toBottomOf="@+id/cake_label_image"
+        app:layout_constraintEnd_toEndOf="@+id/cake_label_image"
+        app:layout_constraintTop_toTopOf="@+id/cake_label_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
